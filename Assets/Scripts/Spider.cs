@@ -16,7 +16,7 @@ public class Spider : MonoBehaviour
     public int points;
     Vector2 distanceToPlayer;
     GameObject player;
-    public Vector2 triggerDistance = new Vector2(5, 2);
+    public Vector2 triggerDistance = new Vector2(5, 1);
     public Animator animator;
     bool isAlive = true;
     int damage = 20;
