@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
   public float speed = 2.0f;
   public float jetpackForce = 1.0f;
-  public int health = 200;
+  private int health = 200;
   public Animator animator;
   private GameObject playerUI;
 
@@ -97,8 +97,8 @@ public class PlayerMovement : MonoBehaviour
       }
       Debug.Log("Current level:" + SceneManager.GetActiveScene().name); //print levelnumber to the console
     }
-
-    if(collision.gameObject.tag == "tempendlevel")
+    //tempendlevel tag is used for the last level created, so that it goes to main menu, rather than trying to find next level
+    if(collision.gameObject.tag == "tempendlevel") 
         {
             SceneManager.LoadScene("Menu");
         }

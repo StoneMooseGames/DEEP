@@ -26,7 +26,6 @@ public class PlayerUI : MonoBehaviour
   }
   public void SetPoints(int value)
     {
-
         int.TryParse(points.text, out int temp); //points text is a string, so parse it to int temporarily
         temp = temp + value; //add incoming points to temp
         points.text = temp.ToString(); //turn int value back to string and change the text string to correspond right amount of points
