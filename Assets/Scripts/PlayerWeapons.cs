@@ -53,7 +53,7 @@ public class PlayerWeapons : MonoBehaviour
           playerLocation = new Vector3(this.transform.position.x + GetPlayerDirection() * 0.5f, this.transform.position.y, 0);
           GameObject dynamite = Instantiate(dynamitePrefab, playerLocation, Quaternion.identity);
           // "send" information to DynamiteLogic script for logic handling
-
+                    
           dynamites--;
           playerUI.SetDynamite(dynamites);
         }
@@ -72,4 +72,25 @@ public class PlayerWeapons : MonoBehaviour
         if (GameObject.Find("gun").transform.position.x > this.gameObject.transform.position.x) return 1;
         else return -1;
     }
+
+    public int GetAmountOfDynamite()
+    {
+        return dynamites;
+    }
+
+    public void AddAmountOfDynamites(int amount)
+    {
+        if(dynamites < 6)
+        {
+            dynamites += amount;
+            playerUI.SetDynamite(dynamites);
+        }
+        if (dynamites > 6)
+        {
+            dynamites = 6;
+            playerUI.SetDynamite(dynamites);
+        }
+        
+    }
+    
 }

@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
   public float speed = 2.0f;
   public float jetpackForce = 1.0f;
+  public int maxHealth = 200;
   private int health = 200;
   public Animator animator;
   private GameObject playerUI;
@@ -106,13 +107,23 @@ public class PlayerMovement : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        Debug.Log(health);
         playerUI.GetComponent<PlayerUI>().SetHealthFill(health);
         if (health <= 0) startPlayerDeathSequence();
     }
     private void startPlayerDeathSequence()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void GetHealth(int addedHealth)
+    {
+        health += addedHealth;
+        if(health > maxHealth)
+        {
+            health = maxHealth;
+           
+        }
+        playerUI.GetComponent<PlayerUI>().SetHealthFill(health);
     }
 
 }
