@@ -17,7 +17,9 @@ public class DynamitePickUp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision == player)
+        Debug.Log(collision);
+
+        if(collision == player.GetComponent<Collider2D>())
         {
             player.GetComponent<PlayerWeapons>().AddAmountOfDynamites(amountOfDynamiteAdded);
             Destroy(gameObject);
