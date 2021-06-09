@@ -233,7 +233,8 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6546678198844681201, guid: 1492fe926073c714d8b59207647ae6bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1492fe926073c714d8b59207647ae6bc, type: 3}
 --- !u!224 &3036390538311501144 stripped
 RectTransform:
@@ -308,7 +309,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sound Manager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1205247635, guid: 8d1cfcbfcefa931448a50eb484144321, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8d1cfcbfcefa931448a50eb484144321, type: 3}
 --- !u!4 &4574808312466405018 stripped
 Transform:
@@ -383,7 +385,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9019214517332551937, guid: 56c7e5b5a754b994daac93f39e7ccb82, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 56c7e5b5a754b994daac93f39e7ccb82, type: 3}
 --- !u!4 &7737064719081937045 stripped
 Transform:

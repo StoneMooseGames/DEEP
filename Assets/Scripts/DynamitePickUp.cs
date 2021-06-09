@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DynamitePickUp : MonoBehaviour
 {
-    private static int amountOfDynamiteAdded = 2;
+    public int amountOfDynamiteAdded = 2;
     private static int presentAmountOfDynamite;
     private GameObject player;
 
