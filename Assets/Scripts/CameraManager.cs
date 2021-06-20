@@ -24,6 +24,7 @@ public class CameraManager : MonoBehaviour
     if ( other.name == "Player" )
     {
       playerCamera.transform.position = this.gameObject.transform.position + cameraLocationOffset;
+      playerCamera.orthographicSize = this.gameObject.transform.localScale.x * 2;
     }
   }
 }

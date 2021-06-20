@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b09407bb5999da47b48fab8dbd66387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountOfDynamiteAdded: 4
 --- !u!61 &6923073226391806214
 BoxCollider2D:
   m_ObjectHideFlags: 0
